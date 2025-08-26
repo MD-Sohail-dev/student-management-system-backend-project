@@ -1,0 +1,14 @@
+# Ignore Spring Boot configuration files
+src/main/resources/application.properties
+src/main/resources/application.yml
+
+# Ignore build files
+/target/
+
+# Ignore log files
+*.log
+
+# Ignore IDE files
+*.iml
+/.idea/
+/.vscode/
