@@ -23,7 +23,7 @@ It also includes *Swagger UI* for API documentation and testing.
 - *Spring Security & JWT*
 - *Spring Data MongoDB*
 - *JavaMailSender*
-- *Swagger (Springfox/Swagger UI)*
+- *Swagger (Swagger UI)*
 - *Maven*
 
 ---
