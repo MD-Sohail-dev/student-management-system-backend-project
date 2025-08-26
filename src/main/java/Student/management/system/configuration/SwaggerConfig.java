@@ -33,7 +33,7 @@ public class SwaggerConfig {
                         .version("1.0.0")
                         .contact(new Contact()
                                 .name("MD Sohail Ansari GitHub")
-                                .url("https://github.com/MD-Sohail-dev/springboot-student-management"))
+                                .url("https://github.com/MD-Sohail-dev/student-management-system-backend-project.git"))
                         .license(new License()
                                 .name("Apache 2.0")
                                 .url("https://springdoc.org")));
