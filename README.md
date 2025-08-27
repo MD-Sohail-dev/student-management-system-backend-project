@@ -10,10 +10,10 @@ It also includes *Swagger UI* for API documentation and testing.
 - *User Signup & Login* with *Spring Security* and *JWT Authentication*
 - *Email Notifications* using JavaMailSender (e.g., account creation confirmation)
 - *CRUD Operations* for student details (add, update, view)
-- *Admin Module* to view all students and generate admission numbers
+- *Admin Module* to view all students , generate admission numbers and delete student by admission number
 - *Transaction Management & Indexing* for data consistency and performance
 - *Swagger UI Integration* for easy API testing and documentation
-- *MongoDB* as the database
+-  MongoDB Atlas Cloud Database integration
 
 ---
 
@@ -21,9 +21,9 @@ It also includes *Swagger UI* for API documentation and testing.
 - *Java 1.8*
 - *Spring Boot*
 - *Spring Security & JWT*
-- *Spring Data MongoDB*
+- *MongoDB Atlas Cloud Database*
 - *JavaMailSender*
-- *Swagger (Swagger UI)*
+- *Swagger UI Integration*
 - *Maven*
 
 ---
@@ -31,17 +31,22 @@ It also includes *Swagger UI* for API documentation and testing.
 ## 📂 Project Structure
 
 Student-Management-System/
-│── src/main/java/com/student/management/system/
-│   ├── controller/        # REST Controllers
-│   ├── dto/               # Data Transfer Objects
-│   ├── entity/            # MongoDB Entities
-│   ├── repository/        # Spring Data Repositories
-│   ├── security/          # JWT & Spring Security Config
-│   ├── service/           # Business Logic
-│── src/main/resources/
-│   ├── application.yml    # Configuration (DB, Mail, JWT, etc.)
-│── pom.xml                # Maven Dependencies
-
+├── src/
+│ └── main/
+│ ├── java/
+│ │ └── com/student/management/system/
+│ │ ├── configuration/ # Spring Security & Swagger Configuration
+│ │ ├── controller/ # AdminController, PublicController, StudentController
+│ │ ├── dto/ # addDetailsDTO, loginDTO, studentSignupDTO, updateStudentDTO
+│ │ ├── entity/ # admissionNumber, student
+│ │ ├── filter/ # JwtFilter
+│ │ ├── repository/ # admissionNumberRepository, studentRepository
+│ │ ├── service/ # emailService, studentDetailsService, studentService
+│ │ ├── utils/ # JwtUtils
+│ │ └── StudentManagementSystemApplication.java # Main Class
+│ └── resources/
+│ └── application.yml # Configuration (DB, Mail, JWT, etc.)
+└── pom.xml # Maven Dependencies
 
 ---
 
@@ -83,8 +88,10 @@ Student-Management-System/
 - GET /student//profile → Get student details  
 
 ### Admin Controller
-- GET /admin/get-AllStudent → View all student details  
-- GET /admin//generate-admission-number → Generate admission number  
+- `GET /admin/get-AllStudent` → View all student details  
+- `GET /admin/generate-admission-number` → Generate admission number  
+- `DELETE /admin/delete/{admissionNumber}` → Delete a student using admission number
+  
 
 ---
 
