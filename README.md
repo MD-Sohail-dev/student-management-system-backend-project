@@ -29,6 +29,7 @@ It also includes *Swagger UI* for API documentation and testing.
 ---
 
 ## 📂 Project Structure
+```
 Student-Management-System/
 ├── src/
 │   └── main/
@@ -46,6 +47,7 @@ Student-Management-System/
 │       └── resources/
 │           └── application.yml       # Configuration (DB, Mail, JWT, etc.)
 └── pom.xml                            # Maven Dependencies
+
 
 
 ---
