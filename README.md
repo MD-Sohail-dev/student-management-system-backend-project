@@ -29,24 +29,24 @@ It also includes *Swagger UI* for API documentation and testing.
 ---
 
 ## 📂 Project Structure
-
 Student-Management-System/
 ├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/student/management/system/
-│ │ ├── configuration/ # Spring Security & Swagger Configuration
-│ │ ├── controller/ # AdminController, PublicController, StudentController
-│ │ ├── dto/ # addDetailsDTO, loginDTO, studentSignupDTO, updateStudentDTO
-│ │ ├── entity/ # admissionNumber, student
-│ │ ├── filter/ # JwtFilter
-│ │ ├── repository/ # admissionNumberRepository, studentRepository
-│ │ ├── service/ # emailService, studentDetailsService, studentService
-│ │ ├── utils/ # JwtUtils
-│ │ └── StudentManagementSystemApplication.java # Main Class
-│ └── resources/
-│ └── application.yml # Configuration (DB, Mail, JWT, etc.)
-└── pom.xml # Maven Dependencies
+│   └── main/
+│       ├── java/
+│       │   └── com/student/management/system/
+│       │       ├── configuration/    # Spring Security & Swagger Configuration
+│       │       ├── controller/       # AdminController, PublicController, StudentController
+│       │       ├── dto/              # addDetailsDTO, loginDTO, studentSignupDTO, updateStudentDTO
+│       │       ├── entity/           # admissionNumber, student
+│       │       ├── filter/           # JwtFilter
+│       │       ├── repository/       # admissionNumberRepository, studentRepository
+│       │       ├── service/          # emailService, studentDetailsService, studentService
+│       │       ├── utils/            # JwtUtils
+│       │       └── StudentManagementSystemApplication.java   # Main Class
+│       └── resources/
+│           └── application.yml       # Configuration (DB, Mail, JWT, etc.)
+└── pom.xml                            # Maven Dependencies
+
 
 ---
 
