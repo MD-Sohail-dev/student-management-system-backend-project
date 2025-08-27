@@ -47,7 +47,7 @@ Student-Management-System/
 │       └── resources/
 │           └── application.yml       # Configuration (DB, Mail, JWT, etc.)
 └── pom.xml                            # Maven Dependencies
-
+```
 
 
 ---
